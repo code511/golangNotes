@@ -1,4 +1,4 @@
-package mian
+package main
 
 /*数据类型
 1) 布尔类型 bool (布尔零值(初始值)为false,其余皆为0,长度1)

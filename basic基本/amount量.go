@@ -1,4 +1,4 @@
-package mian
+package main
 
 /* 变量和常量
 命名规则:

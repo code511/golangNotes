@@ -3,7 +3,7 @@
 2) 每个文件必须先声明包
 3) 主程序(可执行程序)必须要有一个main包!
 */
-package mian //main包固定格式
+package main //main包固定格式
 
 import "fmt" //通过import导入非main包
 
