@@ -1,11 +1,9 @@
 package main
-
 import (
 	"math/rand"
 	"time"
 	"fmt"
 )
-
 // 猜数字小游戏 : 随机给出四位数字,回答时 给与每一位提示(大或小),直到全部答对
 func main(){
 	rand.Seed(time.Now().UnixNano())//创建时间活随机种子
@@ -18,7 +16,7 @@ func main(){
 		var z int
 		for {
 			println("请输入四位数字:")
-			fmt.Scan(&z)
+			fmt.Scan(&z)	//键盘取值 赋值给 z
 			if z>999 && z<10000 {
 				break
 			}
@@ -41,13 +39,15 @@ func main(){
 			println("恭喜过关")
 			break
 			}
-
 	}
 }
 func getnum(z int)(s []int){  // int 转 切片 类型
-	s= append(s,z/1000)
-	s= append(s,z%1000/100)
-	s= append(s,z%100/10)
-	s= append(s,z%10)
+	s= append(s,z/1000)		//取商
+	s= append(s,z%1000/100)//取余再取商
+	s= append(s,z%100/10)	//取余再取商
+	s= append(s,z%10)	//取余
 	return
+}
+func smelled(){
+
 }
