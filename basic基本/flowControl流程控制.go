@@ -49,7 +49,7 @@ func main() {
 		println("按下了3层")
 	default:
 		println("不坐电梯")
-	}              /* 其他特性 :
+	} /* 其他特性 :
 	 */
 	switch score := 88; { //初始化语句中条件可以省略
 	case score > 90:
@@ -65,7 +65,7 @@ func main() {
 		3) 循环结构 (for循环) :
 			3.1)	标准格式 :
 		for 初始化条件 ; 判断条件 ; 条件变化 { 执行体 } */
-	var a2 int //声明for语句体外变量a2
+	var a2 int                    //声明for语句体外变量a2
 	for a1 := 1; a1 <= 10; a1++ { //	for 初始化条件 ; 判断条件 ; 条件变化 { 执行体 } */
 		a2 += a1           //执行体
 		println("a2=", a2) //打印相加过程

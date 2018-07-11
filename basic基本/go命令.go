@@ -1,4 +1,5 @@
 package main
+
 /*
 1、GO命令一览
 
@@ -80,7 +81,7 @@ package main
 
 　　该命令加上 -json 标记可以显示完整信息，如：
 
-　　
+
 
 　　如果只想显示指定信息，可以使用 -f 标记，如 go list -f {{.GoFiles}} net/http 可以显示 net/http 包中的 GO 源码文件列表。（所以可以理解，默认的 go list 相当于 go list -f {{.ImportPath}}）
 
@@ -90,7 +91,7 @@ package main
 
 10、go fmt
 
-　　作用于代码包，用于格式化代码包中的代码格式，注意不包含代码包中的子代码包。是 gofmt 的简单封装，相当于 gofmt -l -w ，更多信息，请通过 gofmt -h 查看。　
+　　作用于代码包，用于格式化代码包中的代码格式，注意不包含代码包中的子代码包。是 gofmt 的简单封装，相当于 gofmt -l -w ，更多信息，请通过 gofmt -h 查看。
 
 
 
@@ -131,6 +132,6 @@ go tool objdump -s "operate\.Login" server
 
  上面的意思是，解析可执行文件server，将其中的 operate 包的 Login 方法转成汇编代码。
 */
-func main(){
+func main() {
 
 }
