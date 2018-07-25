@@ -47,7 +47,7 @@ func main() {
 		fallthrough //条件体结尾加上fallthrough,条件为true则余下无条件执行
 	case 3:
 		println("按下了3层")
-	default:
+	default: //都不满足执行
 		println("不坐电梯")
 	} /* 其他特性 :
 	 */
