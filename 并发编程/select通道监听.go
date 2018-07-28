@@ -6,7 +6,7 @@ import (
 )
 
 /*
-select用于检测通道是否阻塞 ,用法和switch相似,但每个case必须是IO操作
+select用于检测通道是否阻塞 ,用法和switch相似,但每个case必须是IO操作,case默认无break
 如果case都可通信则随机执行语句,如果case全都阻塞,并且结尾没有default语句,select语句将会阻塞
  */
 func main() {
