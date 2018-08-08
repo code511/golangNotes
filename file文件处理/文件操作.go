@@ -11,8 +11,8 @@ func check(e error){  //创建一个检查器函数,以检查错误时使用
 }
 func main(){
 // 1) 新建文件 :
-// 已有该文件则返回错误,相当于OpenFile的快捷操作，等同于OpenFile(name string, O_CREATE,0666)
-fff,err := os.Create("./newFile.txt") //当前目录新建文件 newFile.txt,返回文件描述符(句柄)和错误(可忽略)
+// 已有该文件则返回错误,相当于OpenFile的快捷操作，打开后等同于OpenFile(name string, O_CREATE,0666)
+fff,err := os.Create("newFile.txt") //当前目录新建文件 newFile.txt,返回文件描述符(句柄)和错误(可忽略)
 check(err)		//检查错误
 s := "写入成功"  //初始化字符串
 num,err := fff.WriteString(s) //写入字符串到fff文件变量,返回写入字节数和错误(可忽略)

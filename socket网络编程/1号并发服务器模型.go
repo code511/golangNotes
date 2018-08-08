@@ -15,11 +15,11 @@ import (
 )
 
 func main() {
-	lis, err := net.Listen("tcp", "127.0.0.1:8000")  //等待客户端连接 ,返回描述符 lis
+	lis, err := net.Listen("tcp", "127.0.0.1:8000")  //创建服务器 ,返回描述符 lis
 	checker(err)  //检查错误
 	fmt.Println("等待客户端连接...")
 	for {
-		co, err1 := lis.Accept() //得到操作接口 co
+		co, err1 := lis.Accept() //等待,连接后得到操作接口 co
 		checker(err1)
 		go maker(co)	// 每次连接开启一个新协程 maker操作 co
 	}

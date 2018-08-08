@@ -16,7 +16,7 @@ b/s 模型 :
 func main(){
 // 1) 服务器 :
 // 监听						使用tcp协议模式			端口
-listener,err := net.Listen("tcp","127.0.0.1:8000") //返回文件描述符 ls
+listener,err := net.Listen("tcp","127.0.0.1:8000") //创建服务器,返回文件描述符 ls
 check(err)
 defer listener.Close()
 // 阻塞等待用户连接
