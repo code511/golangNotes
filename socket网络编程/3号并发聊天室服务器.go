@@ -91,12 +91,12 @@ func handleConn(conn net.Conn) {
 		select { //检测通道
 		case <-isQuit:  //如果通道不阻塞
 			delete(onlineMap, cliAddr) //删除map中当前连接用户信息
-			messaage <- makeMsg(cli, "login out") //广播用户退出提示
+			messaage <- makeMsg(cli, "login out") //广播此连接用户退出提示
 			return
 		case <-hasDate: //如果不阻塞
 		case <-time.After(time.Second * 20): //如果阻塞时间达到20秒
 			delete(onlineMap, cliAddr)	//删除map中当前连接用户信息
-			messaage <- makeMsg(cli, "time leave out")	//广播次连接用户超时退出
+			messaage <- makeMsg(cli, "time leave out")	//广播此连接用户超时退出提示
 			return
 		}
 	}
