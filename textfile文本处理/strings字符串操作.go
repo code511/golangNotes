@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"strings"
+	"sort"
 )
 
 // 字符串操作 :
@@ -39,4 +40,8 @@ for i,d := range b1{ //迭代打印
 	// 去除换行符
 	str = strings.Replace(str, "\n", "", -1)
 	fmt.Println(str)
+// 9)  sort 排序 (按照ascii码表)
+	stri := []string {"1","3","2"}
+	sort.Strings(stri)
+	fmt.Println(stri) // 1 2 3
 }

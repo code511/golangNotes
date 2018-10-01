@@ -4,7 +4,7 @@ package main
  1) 常规 :
 import (
 	"fmt"	  //在()内导入多个包
-	"./test"	//可以是路径
+	"./pathTest"	//可以是路径
 )*/
 // 2)	. 操作(调用时省略包名) :
 import . "fmt"

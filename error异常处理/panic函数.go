@@ -14,7 +14,7 @@ func testa(){
 	println("1")
 }
 func testb(){
-	panic("this is panic test")  //程序中断,并提示错误信息
+	panic("this is panic pathTest")  //程序中断,并提示错误信息
 }
 func testc(){
 	println("3")
